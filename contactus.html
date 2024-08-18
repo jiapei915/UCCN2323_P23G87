@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" type="text/css" href="css/foodstyle.css">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="css/statestyle.css">
+    <link rel="stylesheet" type="text/css" href="css/contactus.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oi&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Leckerli+One&family=Oi&family=Rubik+Doodle+Shadow&family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Dancing+Script:wght@400..700&family=Leckerli+One&family=Oi&family=Rubik+Doodle+Shadow&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        /*cookie banner*/
+        
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: grey;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .cookie-btn {
+            background-color: white;
+            color: grey;
+        }
+        .footer{
+            background-color: rgba(92, 143, 167, 0.784);
+            margin-top: 30px;
+            display:flex;
+        }
+
+        .footer-text{
+            font-family: "Cabin", sans-serif;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            padding-left: 50px;
+            color:#fff;
+        }
+
+        .footer-text a{
+            color: #fff;
+        }
+
+        .footer-textb{
+            padding-top: 30px;
+            padding-bottom: 20px;
+            font-family: "Cabin", sans-serif;
+            color: #fff;
+            position: absolute;
+            left: 50%; 
+            transform: translateX(-50%);
+        }
+            
+        .footer-img {
+            position: absolute; 
+            right: 0; 
+            transform: translateX(-50%);
+            padding-top: 25px;
+            padding-bottom: 20px;
+            padding-right: 50px;
+        }
+
+        .image-with-border {
+            border: 2px solid rgba(57, 103, 124, 0.784); 
+            border-radius: 10px; 
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <!--Navigation BAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <div class="home">
+            <a class="navbar-brand" href="homepage.html">
+                <img src="image/malaysiaflag.png" alt="Discover Malaysia">
+            </a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>   
+        <div class="nav" id="navbarNav">
+            <li class="nav-item">
+                <a  href="perak.html"><img src="image/perakflag.png" width="60px" height="40px" alt="Perak">Perak</a>
+                <a  href="penang.html"><img src="image/penangflag.png" width="60px" height="40px" alt="Penang">Penang</a>
+                <a  href="sabah.html"><img src="image/sabahflag.png" width="60px" height="40px" alt="Sabah">Sabah</a>
+                <a  href="sarawak.html"><img src="image/sarawakflag.png" width="60px" height="40px" alt="Sarawak">Sarawak</a>
+                <a  href="melaka.html"><img src="image/melakaflag.png" width="60px" height="40px" alt="Melaka">Melaka</a>
+                <a  href="pahang.html"><img src="image/pahangflag.png" width="60px" height="40px" alt="Pahang">Pahang</a>
+                <a  href="contactus.html"><img src="image/contact.png" width="40px" height="40px"  alt="Contact Us">  Contact Us</a>
+            </li>
+        </div>
+    </nav>
+
+    <div class="contact-container">
+        <div class="left-col">
+            <img src="image/contactus.jpg" width="650px" height="760px">
+        </div>
+        <div class="right-col">
+          <h1>Contact us</h1>
+          <p>Planning to visit Malaysia soon? Get insider tips on where to go, things to do and find best deals for your next adventure.</p>
+          
+          <form id="contact-form" method="post">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+            
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+            
+            <label for="message">Message</label>
+            <textarea rows="6" placeholder="Your Message" id="message" name="message" required></textarea>
+            
+            <button type="submit" id="submit" name="submit">Send</button>
+          </form>
+          
+          <div id="error"></div>
+          <div id="success-msg"></div>
+        </div>
+        <a href="https://www.facebook.com/login.php/"><img src="image/facebook.jpeg" width="50px" height="45px"></a>
+        <a href="https://www.linkedin.com/login"><img src="image/linkedin.jpg" width="50px" height="45px"></a>
+        <a href="https://web.whatsapp.com/"><img src="image/whatsapp.jpeg" width="50px" height="45px"></a>
+        <a href="https://www.instagram.com/accounts/login/"><img src="image/instagram.png" width="50px" height="45px"></a>
+
+
+      </div>
+
+    <!--Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <p>This website uses cookies to enhance user experience. Do you accept the use of cookies?</p>
+        <button id="accept-btn" class="cookie-btn" onclick="acceptCookie()">Accept</button>
+        <button id="decline-btn" class="cookie-btn" onclick="declineCookie()"> Decline</button>
+    </div>
+
+    <div id="result"></div>
+
+
+    <script>
+        // Function to set Local Storage
+        function acceptCookie() {
+            setLocalStorage("cookieAccepted", "yes");
+            //document.getElementById("result").innerHTML = "accepted";
+            document.getElementById("cookie-banner").style.visibility = "hidden";
+        }
+
+        function declineCookie() {
+            document.getElementById("cookie-banner").style.visibility = "hidden";
+        }
+
+        function setLocalStorage(name, value) {
+            localStorage.setItem(name, value);
+        }
+
+        // Check if the user has accepted cookies
+        if (localStorage.getItem("cookieAccepted") === "yes") {
+            document.getElementById("cookie-banner").style.visibility = "hidden";
+        }
+    </script>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<footer class="footer">
+    <div class="footer-text">
+        <p style="font-size: 25px;">More information about Malaysia :<p>
+            <p><u>Malaysia Weather</u></p>
+            <div id="weather">
+                <p>Temperature: <span id="temperature"></span> °C</p>
+                <p>Description: <span id="description"></span></p>
+                <p>Humidity: <span id="humidity"></span> %</p>
+            </div>
+        
+            <script src="js/script.js"></script>
+        <br><p><b>Designed by TEAM CUTI-CUTI MALAYSIA &copy; All right reserved</b></p>
+    </div>
+    
+    <div class="footer-textb">
+        <p>TEAM CUTI-CUTI MALAYSIA</p>
+        <p>Address :</p>
+        <p>Jalan Universiti,<br> 
+        Taman Bandar Baru,<br>
+        31900, Kampar, Perak,<br>
+        Malaysia.</p>
+    </div>
+
+    <div class="footer-img">
+        <img src="image/msiamapicon.jpg" alt="MALAYSIA" width="200px" height="200px" class="image-with-border">
+    </div>
+</footer> 
+
+</body>
+
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Malaysia</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <script src="js/main.js"></script>
+    
+        <link rel="stylesheet" type="text/css" href="css/navigation.css">
+        <link rel="stylesheet" type="text/css" href="css/statestyle.css">
+        <link rel="stylesheet" type="text/css" href="css/flip.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oi&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Leckerli+One&family=Oi&family=Rubik+Doodle+Shadow&family=Satisfy&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Dancing+Script:wght@400..700&family=Leckerli+One&family=Oi&family=Rubik+Doodle+Shadow&family=Satisfy&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/myBtn.css">
+        
+        <style>
+            body {
+              background-repeat: no-repeat;
+              background-image: url(image/malaysia.jpg);
+              height: 500px;
+              width: 100%;
+            }
+
+            .container h1 {
+                background-color: rgba(255, 255, 255, 0.467);
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+            .container {
+                padding-top:15px;
+                padding-bottom: 15px;
+            }
+
+            .image-container {
+                display: flex;
+                justify-content: center;
+            }
+            .image-container img {
+                width: 250px;
+                height: 250px;
+                margin-right: 40px;
+                margin-left: 40px;
+                border-radius: 10%;
+                border: 7px solid #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            }
+
+            .rubik-doodle-shadow-regular {
+                font-family: "Rubik Doodle Shadow", system-ui;
+                font-weight: 400;
+                font-size: 80px;
+                font-style: normal;
+                text-align: center;
+                letter-spacing: 30px;
+            }
+            .leckerli-one-regular {
+                font-family: "Leckerli One", cursive;
+                font-size: 60px;
+                font-weight: 400;
+                font-style: normal;
+                text-align: center;
+                margin-top: 40px;
+                margin-bottom: 10px;
+                background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .footer{
+                background-color: rgba(92, 143, 167, 0.784);
+                margin-top: 30px;
+                display:flex;
+            }
+
+            .footer-text{
+                font-family: "Cabin", sans-serif;
+                padding-top: 30px;
+                padding-bottom: 20px;
+                padding-left: 50px;
+                color:#fff;
+            }
+
+            .footer-text a{
+                color: #fff;
+            }
+
+            .footer-textb{
+                padding-top: 30px;
+                padding-bottom: 20px;
+                font-family: "Cabin", sans-serif;
+                color: #fff;
+                position: absolute;
+                left: 50%; 
+                transform: translateX(-50%);
+            }
+
+            .footer-img {
+                position: absolute; 
+                right: 0; 
+                transform: translateX(-50%);
+                padding-top: 25px;
+                padding-bottom: 20px;
+                padding-right: 50px;
+            }
+
+            .image-with-border {
+                border: 2px solid rgba(57, 103, 124, 0.784); 
+                border-radius: 10px; 
+            }
+
+        </style>
+    </head>
+
+    <body class="bg">
+            <!--Navigation BAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <div class="home">
+            <a class="navbar-brand" href="homepage.html">
+                <img src="image/malaysiaflag.png" alt="Discover Malaysia">
+            </a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>   
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+        <div class="nav" id="navbarNav">
+            <li class="nav-item">
+                <a  href="perak.html"><img src="image/perakflag.png" width="60px" height="40px" alt="Perak">Perak</a>
+                <a  href="penang.html"><img src="image/penangflag.png" width="60px" height="40px" alt="Penang">Penang</a>
+                <a  href="sabah.html"><img src="image/sabahflag.png" width="60px" height="40px" alt="Sabah">Sabah</a>
+                <a  href="sarawak.html"><img src="image/sarawakflag.png" width="60px" height="40px" alt="Sarawak">Sarawak</a>
+                <a  href="melaka.html"><img src="image/melakaflag.png" width="60px" height="40px" alt="Melaka">Melaka</a>
+                <a  href="pahang.html"><img src="image/pahangflag.png" width="60px" height="40px" alt="Pahang">Pahang</a>
+                <a  href="contactus.html"><img src="image/contact.png" width="40px" height="40px"  alt="Contact Us">  Contact Us</a>
+            </li>
+        </div>
+    </nav>
+
+    
+
+    <!--Section that apply API-->
+    <div class="bg-image-section1">
+        <section id="section1" class="transparent-section">
+            <div class="container">
+
+                <h1 class="rubik-doodle-shadow-regular"">Malaysia
+                </h1>
+                
+                <p style="font-family: 'Times New Roman', serif; color:rgb(255, 255, 255); text-align: center; font-size: 20px;" ><b>
+                    Malaysia is a captivating destination divided into West Malaysia (Peninsular Malaysia) and East Malaysia (on the island of Borneo), 
+                    each offering unique experiences. West Malaysia boasts vibrant cities, historical landmarks, and scenic highlands, including the 
+                    cultural richness of Penang and Melaka, as well as the natural beauty of Pahang's Cameron Highlands. East Malaysia, consisting of 
+                    Sabah and Sarawak, is a nature lover’s paradise, home to majestic Mount Kinabalu, stunning coral reefs, and vast rainforests. 
+                    Whether it's cultural exploration or outdoor adventure, both sides of Malaysia offer a perfect blend of heritage, nature, and modernity.
+                </b></p>
+
+                <p style="font-family: 'Times New Roman', serif; color:white; text-align: center; font-size: 20px;">
+                    Perak, Penang, Sabah, Sarawak, Melaka, and Pahang stand out as valuable tourism hotspots that attract both foreigners and Malaysians alike, 
+                    offering diverse experiences that cater to a wide range of interests.</p>
+            </div>
+
+            <div class="image-container">
+                <img src="image/MiconA.png" 
+                    alt="Malaysia Map"
+                    style="width: 200px;
+                    height: 200px;"">
+
+                <img src="image/MiconB.png" 
+                    alt="Malaysia Map"
+                    style="width: 200px;
+                    height: 200px;">
+
+                <img src="image/MiconC.png" 
+                    alt="Malaysia Map"
+                    style="width: 200px;
+                    height: 200px;">
+            </div>
+
+            <div class="leckerli-one-regular">
+                -- Now is the Time to Cuti-Cuti Malaysia --
+            </div>
+
+        <div class="flip-box-container">
+            <div class="flip-box">
+                <a href="perak.html">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="image/perakcover.png" alt="PERAK" style="width:400px;height:300px">
+                        </div>
+                        <div class="flip-box-back">
+                            <h3>PERAK</h3>
+                            <br><p>A state rich in history and natural beauty, Perak is known for the mysterious Kellie’s 
+                                Castle and the spiritual Perak Cave Temple, providing a unique mix of historical 
+                                intrigue and serene landscapes.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="flip-box">
+                <a href="penang.html">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="image/penangcover.png" alt="PENANG" style="width:400px;height:300px">
+                        </div>
+                        <div class="flip-box-back">
+                            <h3>PENANG</h3>
+                            <br><p>Known as the "Pearl of the Orient," Penang is famed for its vibrant heritage, 
+                                delicious street food, and attractions like Penang Hill and the stunning Floating 
+                                Mosque, offering both natural beauty and cultural richness.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="flip-box">
+                <a href="sabah.html">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="image/sabahcover.png" alt="SABAH" style="width:400px;height:300px">
+                        </div>
+                        <div class="flip-box-back">
+                            <h3>SABAH</h3>
+                            <br><p>Located in East Malaysia, is a paradise for adventure enthusiasts and nature lovers. 
+                                With the towering Mount Kinabalu and the picturesque Kundasang Desa Farm, Sabah offers 
+                                stunning landscapes and thrilling outdoor activities. Its rich biodiversity, including exotic 
+                                wildlife and pristine coral reefs, also draws ecotourists from around the globe.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="flip-box">
+                <a href="sarawak.html">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="image/sarawakcover.png" alt="SARAWAK" style="width:400px;height:300px">
+                        </div>
+                        <div class="flip-box-back">
+                            <h3>SARAWAK</h3>
+                            <br><p>The largest state in Malaysia, is equally impressive with its vast rainforests, diverse wildlife,
+                                and cultural diversity. Attractions like Kubah National Park and Miri-Sibuti Coral Reef National 
+                                Park showcase Sarawak’s natural beauty, while its indigenous cultures and traditions offer a 
+                                glimpse into Malaysia’s rich heritage.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="flip-box">
+                <a href="melaka.html">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="image/melakacover.png" alt="Melaka" style="width:400px;height:300px">
+                        </div>
+                        <div class="flip-box-back">
+                            <h3>MELAKA</h3>
+                            <br><p>A UNESCO World Heritage site, is a historical treasure trove that highlights Malaysia’s colonial past. 
+                                The charming Melaka River Cruise, vibrant Dutch Square, and fascinating museums offer a journey back in 
+                                time, making Melaka a hotspot for those interested in history and culture.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="flip-box">
+                <a href="pahang.html">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="image/pahangcover.png" alt="Pahang" style="width:400px;height:300px">
+                        </div>
+                        <div class="flip-box-back">
+                            <h3>PAHANG</h3>
+                            <br><p>It is known for its cool highlands and lush forests. The Mossy Forest in Cameron Highlands, 
+                                with its mysterious and otherworldly appearance, offers a unique experience for nature lovers, 
+                                while the Sungai Pandan Waterfall provides a serene escape. Pahang is the ideal destination for those 
+                                looking to relax in nature’s embrace.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+    </div>
+    <!--Section that navigates to other pages-->
+    
+
+    <!--Script for API-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        let mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+                }
+            }
+            function topFunction() {
+                document.body.scrollTop = 0; 
+                document.documentElement.scrollTop = 0;
+            }
+
+        function loadCountryInfo(nameId, capitalId, populationId, gdp_per_capitaId, currencyId) {
+            const settings = {
+                async: true,
+                crossDomain: true,
+                url: '',
+                method: 'GET',
+                headers: {
+                    'X-RapidAPI-Key': '5963b21ff3msh972f297c84ca3b3p1a466ajsn4c65ff887004',
+                    'X-RapidAPI-Host': 'country-by-api-ninjas.p.rapidapi.com'
+                }
+            };
+
+            $.ajax(settings).done(function (response) {
+                document.getElementById(nameId).innerHTML = response[0].name;
+                document.getElementById(capitalId).innerHTML = response[0].capital;
+                document.getElementById(populationId).innerHTML = response[0].population;
+                document.getElementById(gdp_per_capitaId).innerHTML = response[0].gdp_per_capita;
+                document.getElementById(currencyId).innerHTML = response[0].currency.name;
+            });
+        }85
+        // Ensure the document is fully loaded before calling the loadCountryInfo function
+        $(document).ready(function () {
+            loadCountryInfo('', '', '', '', '');
+        });
+    </script>
+
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p style="font-size: 25px;">More information about Malaysia :<p>
+                <p><u>Malaysia Weather</u></p>
+                <div id="weather">
+                    <p>Temperature: <span id="temperature"></span> °C</p>
+                    <p>Description: <span id="description"></span></p>
+                    <p>Humidity: <span id="humidity"></span> %</p>
+                </div>
+            
+                <script src="js/script.js"></script>
+               
+            <br><p><b>Designed by TEAM CUTI-CUTI MALAYSIA &copy; All right reserved</b></p>
+        </div>
+    
+        <div class="footer-textb">
+            <p>TEAM CUTI-CUTI MALAYSIA</p>
+            <p>Address :</p>
+            <p>Jalan Universiti,<br> 
+            Taman Bandar Baru,<br>
+            31900, Kampar, Perak,<br>
+            Malaysia.</p>
+        </div>
+
+        <div class="footer-img">
+            <img src="image/msiamapicon.jpg" alt="MALAYSIA" width="200px" height="200px" class="image-with-border">
+        </div>
+    </footer>
+</body>
+
+</html>
