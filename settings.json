@@ -1,0 +1,5 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/be0e4a41-b6ba-4c1a-949f-8f61163aac13/resourceGroups/ExploreMalaysia/providers/Microsoft.Web/sites/ExploreMalaysia",
+    "appService.deploySubpath": ".",
+    "liveServer.settings.port": 5502
+}

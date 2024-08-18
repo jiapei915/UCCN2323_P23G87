@@ -1,0 +1,95 @@
+.navbar-dark .navbar-toggler-icon {
+  font-family: 'Times New Roman', Times, serif;
+  height: 100px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar {
+  background-color: #f0f0f0d8;
+}
+
+/*.home {
+  border-width: 10px;
+  border-style: groove;
+  background-color: rgb(255, 255, 255);
+  text-align: right;
+  padding: 2px;
+  font-family: 'Times New Roman', Times, serif;
+}*/
+
+.home {
+  display: flex;
+  border: 1px transparent white;
+  text-align: left;
+  padding: 5px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.home img {
+  width: 120px;
+  height: 60px;
+}
+
+.home a {
+  padding-top: 10px;
+  padding-left: 10px  ;
+}
+
+.nav .nav-item{
+  font-size: 25px;
+}
+
+.nav .nav-item a {
+  color: rgb(86, 86, 86);
+  font-size: 20px;
+  padding: 30px;
+  font-family: Didot, serif;
+}
+
+.nav .nav-item a:hover {
+  color: rgba(117, 116, 116, 0.558);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar-brand {
+  color: goldenrod;
+  font-size: 30px;
+  width: 100%;
+}
+
+.dropdown-item {
+  color: black;
+  display: flex;
+}
+
+.navbar-nav {
+  font-size: 20px;
+}
+
+/* Customize the navbar toggler */
+.navbar-toggler {
+  background-color:#333;
+  border: none; /* Remove the default border */
+}
+
+/* Add a pseudo-element to create the extending background */
+.navbar-toggler::before,
+.navbar-toggler::after {
+  content: "";
+  display: block;
+  height: 3px; /* Adjust the height as needed */
+  margin: 5px 0; /* Adjust margin to control the spacing */
+}
+
+/* Adjust the position and size of the pseudo-elements */
+.navbar-toggler::before {
+  width: 30px; /* Adjust the width to control the length of the extension */
+}
+
+.navbar-toggler::after {
+  width: 20px; /* Adjust the width to control the length of the extension */
+}

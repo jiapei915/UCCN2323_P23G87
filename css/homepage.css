@@ -1,0 +1,67 @@
+.bg-image-section1 {
+    background-image: url('https://i.malaysiakini.com/1306/c31e10bf2458aeb9c7a6ee301c2ad413.jpeg=s800'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0; /* Remove default margin to ensure full coverage */
+    padding: 0; /* Remove default padding */
+    height: 100vh; /* Set the height to cover the entire viewport height */
+    overflow: auto; /* Hide any potential overflow content */
+}
+
+.bg-image-section2 {
+    background-image: url('https://images.pexels.com/photos/22804/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0; /* Remove default margin to ensure full coverage */
+    padding: 0; /* Remove default padding */
+    height: 100vh; /* Set the height to cover the entire viewport height */
+    overflow: auto; /* Hide any potential overflow content */
+}
+
+.transparent-section {
+    margin-top:15px;
+    background-color: rgba(255, 255, 255, 0.4);
+    overflow: auto;
+}
+
+.containerx4 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    overflow: auto;
+}
+
+.box {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out;
+    width: 23%;
+    height:530px;
+    overflow: auto;
+}
+
+.box:hover {
+    opacity: 0.7;
+}
+
+p {
+    margin-top: 10px;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
